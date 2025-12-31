@@ -1,13 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
   font-family: 'Inter', sans-serif;
   color: #222;
-  background: #fff;
 }
 
 .container {
@@ -16,93 +11,145 @@ body {
   margin: auto;
 }
 
+/* HEADER */
 .top-header {
   background: #0b1c2d;
   padding: 15px 0;
 }
-
 .header-flex {
   display: flex;
   align-items: center;
 }
-
-.logo {
-  height: 60px;
-  margin-right: 15px;
-}
-
+.logo { height: 55px; margin-right: 15px; }
 .brand-text h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
+  font-size: 30px;
   font-weight: 900;
-  font-size: 32px;
   color: #fff;
 }
-
 .brand-text span {
   color: #f5a623;
-  font-size: 14px;
   letter-spacing: 2px;
+  font-size: 13px;
 }
 
+/* HERO */
 .hero {
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
   position: relative;
-  height: 75vh;
-  background: #000;
 }
-
-.overlay {
+.hero-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.65);
 }
-
 .hero-content {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   color: #fff;
 }
-
 .hero-content h2 {
   font-family: 'Poppins';
-  font-size: 40px;
+  font-size: 42px;
   font-weight: 800;
 }
+.hero-buttons { margin-top: 20px; }
 
 .btn {
-  display: inline-block;
-  margin-top: 15px;
   padding: 12px 20px;
+  border-radius: 6px;
   text-decoration: none;
-  border-radius: 5px;
   font-weight: 600;
+  display: inline-block;
 }
+.call { background: #f5a623; color: #000; }
+.whatsapp { background: #25d366; color: #fff; margin-left: 10px; }
 
-.primary {
-  background: #f5a623;
-  color: #000;
+/* SECTIONS */
+section { margin-top: 60px; }
+h3 {
+  font-family: 'Poppins';
+  font-size: 28px;
+  margin-bottom: 15px;
 }
+.section-desc { max-width: 700px; }
 
-.secondary {
-  background: #25d366;
-  color: #fff;
-  margin-left: 10px;
+/* SERVICES */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
-
-.services h3 {
-  margin: 60px 0 20px;
+.card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.card h4 {
+  padding: 15px;
   font-family: 'Poppins';
 }
 
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-  gap: 15px;
+/* WHY CHOOSE */
+.why-choose ul {
+  list-style: none;
+}
+.why-choose li {
+  margin: 10px 0;
+  font-weight: 500;
 }
 
-.card {
-  background: #f9f9f9;
-  padding: 30px;
-  border-radius: 8px;
-  text-align: center;
+/* APPOINTMENT */
+.appointment { background: #f5f5f5; padding: 40px 0; }
+.appointment-form {
+  max-width: 400px;
 }
+.appointment-form input,
+.appointment-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+/* OFFICE */
+.office-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+}
+.office-grid img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* CONTACT */
+.contact iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  margin-top: 20px;
+}
+
+/* FLOATING WHATSAPP */
+.whatsapp-float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #25d366;
+  color: #fff;
+  font-size: 28px;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  z-index: 1000;
+}
+
