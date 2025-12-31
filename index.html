@@ -2,17 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sai Siddhi Financial Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800;900&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- HEADER -->
 <header class="top-header">
   <div class="container header-flex">
-    <img src="images/logo.png" class="logo">
+    <img src="images/logo.png" class="logo" alt="Sai Siddhi Logo">
     <div class="brand-text">
       <h1>SAI SIDDHI</h1>
       <span>FINANCIAL SERVICES</span>
@@ -20,28 +24,118 @@
   </div>
 </header>
 
-<section class="hero">
-  <div class="overlay"></div>
+<!-- HERO -->
+<section class="hero" style="background-image:url('images/hero.png')">
+  <div class="hero-overlay"></div>
+
   <div class="hero-content container">
     <h2>Trusted Loan & Financial Solutions</h2>
     <p>15+ Years of Experience | Fast & Transparent Process</p>
-    <a href="tel:8983155700" class="btn primary">📞 Call Now</a>
-    <a href="https://wa.me/918983155700" class="btn secondary">💬 WhatsApp</a>
+
+    <div class="hero-buttons">
+      <a href="tel:8983155700" class="btn call">📞 Call Now</a>
+      <a href="https://wa.me/918983155700?text=Hello%20Sai%20Siddhi%20Financial%20Services,%20I%20want%20loan%20details."
+         class="btn whatsapp" target="_blank">💬 WhatsApp</a>
+    </div>
   </div>
 </section>
 
+<!-- SERVICES -->
 <section class="services container">
   <h3>Our Loan Services</h3>
+  <p class="section-desc">
+    We provide complete loan and financial solutions with low interest rates,
+    fast approvals, and clear guidance.
+  </p>
+
   <div class="service-grid">
-    <div class="card"><h4>Home Loan</h4></div>
-    <div class="card"><h4>Business Loan</h4></div>
-    <div class="card"><h4>Personal Loan</h4></div>
-    <div class="card"><h4>Mortgage Loan</h4></div>
-    <div class="card"><h4>Top-Up Loan</h4></div>
-    <div class="card"><h4>Grampanchayat Loan</h4></div>
+    <div class="card"><img src="images/loan-home.jpg"><h4>Home Loan</h4></div>
+    <div class="card"><img src="images/loan-business.jpg"><h4>Business Loan</h4></div>
+    <div class="card"><img src="images/loan-business.jpg"><h4>Personal Loan</h4></div>
+    <div class="card"><img src="images/loan-mortgage.jpg"><h4>Mortgage Loan</h4></div>
+    <div class="card"><img src="images/loan-business.jpg"><h4>Top-Up Loan</h4></div>
+    <div class="card"><img src="images/loan-mortgage.jpg"><h4>Grampanchayat Loan</h4></div>
   </div>
 </section>
+
+<!-- WHY BEST -->
+<section class="why-best">
+  <div class="container">
+    <h3>Why We Are the Best</h3>
+    <p>
+      Sai Siddhi Financial Services is trusted for honest advice, quick processing,
+      and reliable financial support. With 15+ years of experience, we help you
+      choose the right loan without confusion or hidden charges.
+    </p>
+  </div>
+</section>
+
+<!-- WHY CHOOSE -->
+<section class="why-choose container">
+  <h3>Why Choose Us</h3>
+  <ul>
+    <li>✔ 15+ Years of Experience</li>
+    <li>✔ Transparent & Honest Process</li>
+    <li>✔ Fast Loan Approval</li>
+    <li>✔ Strong Bank & NBFC Network</li>
+    <li>✔ Personal Support End-to-End</li>
+    <li>✔ Local Office Assistance</li>
+  </ul>
+</section>
+
+<!-- APPOINTMENT -->
+<section class="appointment">
+  <div class="container">
+    <h3>Book an Appointment</h3>
+    <p>Get expert guidance for your loan requirements.</p>
+
+    <form action="https://wa.me/918983155700" target="_blank" class="appointment-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="tel" placeholder="Mobile Number" required>
+      <select required>
+        <option value="">Select Loan Type</option>
+        <option>Home Loan</option>
+        <option>Business Loan</option>
+        <option>Personal Loan</option>
+        <option>Mortgage Loan</option>
+        <option>Top-Up Loan</option>
+        <option>Grampanchayat Loan</option>
+      </select>
+      <button type="submit" class="btn call">Book via WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<!-- OFFICE -->
+<section class="office container">
+  <h3>Our Office</h3>
+  <div class="office-grid">
+    <img src="images/office-1.jpg">
+    <img src="images/office-2.jpg">
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <div class="container">
+    <h3>Contact Us</h3>
+    <p><strong>Ravi Dulgach:</strong> 8983155700</p>
+    <p><strong>Chetan Gupte:</strong> 9960620062</p>
+    <p><strong>Office:</strong> 8686850700</p>
+
+    <iframe
+      src="https://www.google.com/maps?q=Sai%20Siddhi%20Financial%20Services%20Talegaon&output=embed"
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+<!-- FLOATING WHATSAPP -->
+<a class="whatsapp-float"
+   href="https://wa.me/918983155700?text=Hello%20Sai%20Siddhi%20Financial%20Services,%20I%20want%20loan%20details."
+   target="_blank">💬</a>
 
 <script src="script.js"></script>
 </body>
-</html>
+                          </html>
+
