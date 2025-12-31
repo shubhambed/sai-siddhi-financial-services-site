@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sai Siddhi Financial Services | Loans in Talegaon</title>
+  <title>Sai Siddhi Financial Services | Trusted Loan Experts</title>
 
   <!-- SEO -->
-  <meta name="description" content="Sai Siddhi Financial Services offers Home Loan, Business Loan, Personal Loan & Mortgage Loan with fast approval in Talegaon, Pune.">
-  <meta name="keywords" content="Home Loan Talegaon, Business Loan Pune, Mortgage Loan, Sai Siddhi Financial Services">
+  <meta name="description" content="Sai Siddhi Financial Services offers Home Loan, Business Loan, Personal Loan and Mortgage Loan with fast approval in Talegaon, Pune.">
+  <meta name="keywords" content="Sai Siddhi Financial Services, Home Loan Talegaon, Business Loan Pune, Personal Loan, Mortgage Loan">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="style.css">
@@ -15,7 +15,7 @@
 
 <!-- HEADER -->
 <header class="header">
-  <img src="images/logo.png" alt="Sai Siddhi Logo">
+  <img src="images/logo.png" alt="Sai Siddhi Financial Services Logo">
   <div>
     <h1>SAI SIDDHI</h1>
     <span>FINANCIAL SERVICES</span>
@@ -42,22 +42,22 @@
 
   <div class="cards">
     <div class="card">
-      <img src="images/loan-home.jpg">
+      <img src="images/loan-home.jpg" alt="Home Loan">
       <h3>Home Loan</h3>
     </div>
 
     <div class="card">
-      <img src="images/loan-business.jpg">
+      <img src="images/loan-business.jpg" alt="Business Loan">
       <h3>Business Loan</h3>
     </div>
 
     <div class="card">
-      <img src="images/Personal-Loan.jpg">
+      <img src="images/loan-personal.jpg" alt="Personal Loan">
       <h3>Personal Loan</h3>
     </div>
 
     <div class="card">
-      <img src="images/mortgage_loan.jpg">
+      <img src="images/loan-mortgage.jpg" alt="Mortgage Loan">
       <h3>Mortgage Loan</h3>
     </div>
   </div>
@@ -68,7 +68,8 @@
   <h2>Why We Are the Best</h2>
   <p>
     Sai Siddhi Financial Services is trusted for honest advice, quick processing,
-    and reliable financial solutions. We help you choose the right loan with clarity and confidence.
+    and reliable financial solutions. With over 15 years of experience, we help
+    clients choose the right loan with confidence and transparency.
   </p>
 </section>
 
@@ -94,8 +95,8 @@
 <!-- OFFICE -->
 <section class="section light">
   <h2>Our Office</h2>
-  <img src="images/office-1.jpg" class="office-img">
-  <img src="images/office-2.jpg" class="office-img">
+  <img src="images/office-1.jpg" class="office-img" alt="Sai Siddhi Office">
+  <img src="images/office-2.jpg.png" class="office-img" alt="Sai Siddhi Office Interior">
 </section>
 
 <!-- CONTACT -->
@@ -116,8 +117,8 @@
 
 <!-- THANK YOU -->
 <section class="thankyou">
-  <h3>Thank You for Trusting Sai Siddhi Financial Services</h3>
-  <p>We look forward to helping you achieve your financial goals with confidence.</p>
+  <h3>Thank You for Choosing Sai Siddhi Financial Services</h3>
+  <p>Your trust matters to us. We look forward to supporting your financial journey.</p>
 </section>
 
 <!-- FLOATING WHATSAPP -->
@@ -125,12 +126,12 @@
 
 <script>
 function bookWhatsApp() {
-  const name = document.getElementById("name").value;
-  const mobile = document.getElementById("mobile").value;
+  const name = document.getElementById("name").value.trim();
+  const mobile = document.getElementById("mobile").value.trim();
   const loan = document.getElementById("loan").value;
 
   if (!name || !mobile) {
-    alert("Please fill all details");
+    alert("Please enter your name and mobile number");
     return;
   }
 
